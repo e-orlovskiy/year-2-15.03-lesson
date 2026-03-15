@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.jsdelivr.net/npm/axios@1.13.6/dist/axios.min.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>ToDo List</h1>
+
+		<form id="todoForm">
+			<input type="text" placeholder="Название задачи" id="title" />
+			<textarea id="description" placeholder="Описание(?)"></textarea>
+			<select id="priority">
+				<option value="low">Низкий</option>
+				<option value="medium" selected>Средний</option>
+				<option value="high">Высокий</option>
+			</select>
+			<button type="submit" id="submitBtn">Добавить</button>
+		</form>
+
+		<ul class="todoList">
+			<li class="todo-item" data-id="id123">
+				<div class="leftPart">
+					<input type="checkbox" />
+					<span>Название - Описание</span>
+					<span>[низкий]</span>
+				</div>
+				<div class="rightPart">
+					<button class="edit-btn">Ред.</button>
+					<button class="delete-btn">Удал.</button>
+				</div>
+			</li>
+		</ul>
+
+		<script src="./script.js"></script>
+	</body>
+</html>

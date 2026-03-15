@@ -1,0 +1,56 @@
+* {
+	font-family: 'Cascadia Code';
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+ul > li,
+ol > li {
+	list-style: none;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border: 2px solid black;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+textarea {
+	width: 100%;
+}
+
+form > * {
+	font-size: 24px;
+}
+
+.todoList {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border: 2px solid black;
+	padding: 10px;
+}
+
+.todoList > li {
+	display: flex;
+}
