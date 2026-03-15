@@ -1,4 +1,4 @@
-axios.defaults.baseURL = 'http://localhost:3000/api'
+axios.defaults.baseURL = 'https://year-2-15-03-lesson-server.onrender.com/api'
 
 const todoForm = document.querySelector('#todoForm')
 const titleInput = document.querySelector('#title')
